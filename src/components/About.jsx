@@ -7,7 +7,16 @@ function About() {
   return (
     <div className='w-full bg-[#CDEA68] pt-[5vw] pb-[3vw] rounded-tl-3xl rounded-tr-3xl -mt-[10vh] relative z-[2]' >
       
-    <h1 className='text-[3.7vw] leading-[4vw] px-20 py-10 text-black'>We craft category-defining presentations, brand identities, and digital experiences that drive funding, sales, and market leadership.</h1>
+    <h1 className='text-[3.7vw] leading-[4vw] px-20 py-10 text-black'>We craft category-defining presentations, brand identities, and digital experiences that  <span className="relative inline-block cursor-pointer group ">
+    drive funding
+    <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-black scale-x-100 group-hover:scale-x-0 transition-transform duration-500 ease-out origin-left group-hover:origin-right"></span>
+  </span>,   <span className="relative inline-block cursor-pointer group ">
+    sales
+    <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-black scale-x-100 group-hover:scale-x-0 transition-transform duration-500 ease-out origin-left group-hover:origin-right"></span>
+  </span>,   <span className="relative inline-block cursor-pointer group ">
+  market leadership.
+    <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-black scale-x-100 group-hover:scale-x-0 transition-transform duration-500 ease-out origin-left group-hover:origin-right"></span>
+  </span></h1>
 
      <div className='flex gap-5 w-full border-t-[1px] border-[#a1b562] mt-20  text-black'>
       <div className='w-1/2 px-20 py-5'> 
@@ -34,10 +43,12 @@ function About() {
             </span>
       </button>
       </div>
-      <div className={`bg-[#93a74a] w-1/2 h-[70vh] mt-7 mr-20 rounded-lg overflow-hidden transition-all duration-700  ease-in-out 
+      <div className={`bg-[#93a74a] w-1/2 h-[70vh] mt-7 mr-20 rounded-lg overflow-hidden transition-all duration-1000  ease-in-out 
          ${hovered ? "scale-95 opacity-100" : "scale-100 opacity-100"}
       `}>
-        <img className="object-cover w-full h-full" src='https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg' />
+        <img className={`object-cover w-full h-full  transition-all duration-1000  ease-in-out 
+         ${hovered ? "scale-110 opacity-100" : "scale-100 opacity-100"}`}
+         src='https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg' />
         </div>
 
      </div>

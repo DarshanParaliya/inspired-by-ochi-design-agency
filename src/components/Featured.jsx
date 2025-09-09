@@ -23,7 +23,7 @@ function Featured() {
 
    <motion.div 
    whileHover={{ scale: .95 }}
-transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
    onHoverStart ={()=>handleHover(0)}
    onHoverEnd ={()=>handleHoverEnd(0)}
    className='relative cardContainer  w-1/2 h-[70vh] '>
@@ -41,6 +41,19 @@ transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >{item === " " ? "\u00A0" : item}</motion.span>
     ))}
     </h1>
+
+    <div className=' absolute flex gap-5 items-center justify-center left-[5%] top-[100%]'>
+      <span className='relative group text-[1vw] border-2 border-zinc-900 px-4 py-3 rounded-full
+       overflow-hidden cursor-pointer transition-all duration-500 ease-all'>
+        <span className='relative z-10 group-hover:text-white transition-all duration-300'>BRAND IDENTITY</span>
+        <span className='absolute inset-0 bg-zinc-900 rounded-full scale-y-0 origin-bottom transition-transform ease-in group-hover:scale-y-100'></span>
+      </span>
+      <span className='relative group text-[1vw] border-2 border-zinc-900 px-4 py-3 rounded-full
+       overflow-hidden cursor-pointer transition-all duration-500 ease-all'>
+        <span className='relative z-10 group-hover:text-white transition-all duration-300'>PITCH DECK</span>
+        <span className='absolute inset-0 bg-zinc-900 rounded-full scale-y-0 origin-bottom transition-transform ease-in group-hover:scale-y-100'></span>
+      </span>
+    </div>
 
    <motion.div
   whileHover={{ scale: .95 }}
@@ -61,6 +74,27 @@ transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className='inline-block'
       >{item === " " ? "\u00A0" : item}</motion.span>
     ))}</h1>
+
+<div className=' absolute flex gap-5 items-center justify-center left-[52%] top-[100%]'>
+      <span className='relative group text-[1vw] border-2 border-zinc-900 px-4 py-3 rounded-full
+       overflow-hidden cursor-pointer transition-all duration-500 ease-all'>
+        <span className='relative z-10 group-hover:text-white transition-all duration-300'>CONFERENCE</span>
+        <span className='absolute inset-0 bg-zinc-900 rounded-full scale-y-0 origin-bottom transition-transform ease-in group-hover:scale-y-100'></span>
+      </span>
+      <span className='relative group text-[1vw] border-2 border-zinc-900 px-4 py-3 rounded-full
+       overflow-hidden cursor-pointer transition-all duration-500 ease-all'>
+        <span className='relative z-10 group-hover:text-white transition-all duration-300'>EXECUTIVE KEYNOTES</span>
+        <span className='absolute inset-0 bg-zinc-900 rounded-full scale-y-0 origin-bottom transition-transform ease-in group-hover:scale-y-100'></span>
+      </span>
+      <span className='relative group text-[1vw] border-2 border-zinc-900 px-4 py-3 rounded-full
+       overflow-hidden cursor-pointer duration-500 ease-all'>
+        <span className='relative z-10 group-hover:text-white transition-colors duration-300'>PRODUCT LAUNCH</span>
+        <span className='absolute inset-0 bg-zinc-900 rounded-full scale-y-0 origin-bottom transition-transform ease-in group-hover:scale-y-100'></span>
+      </span>
+    </div>
+
+
+    
    </div>
     </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -14,9 +15,23 @@ function Navbar() {
      </div>
 
     <div className='links flex gap-10'>
-         {["Services", "Our Works", "About Us", "Insights","Contact Us"].map((item, index) => (
-            <a key={index} className={`texd-lg capitalize font-md ${index === 4 && "ml-32"}`}>{item}</a>
+         {["Services", "Our Works", "About Us", "Insights"].map((item, index) => (
+            <a key={index} className={`relative group cursor-pointer text-lg inline-block capitalize font-md ${index === 4 && "ml-32"}`}>{item}
+            
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] transition-all duration-300 ease-out group-hover:w-full bg-black"></span>
+            </a>
          ))}
+
+       <Link
+       to = '/contactus'
+       className='text-[1vw] relative group cursor-pointer inline-block capitalize font-md'
+       >
+        Contact Us
+        <span className="absolute left-0 -bottom-1 w-0 h-[2px] transition-all duration-300 ease-out group-hover:w-full bg-black"></span>
+       </Link>
+
+
+
     </div>
 
 
